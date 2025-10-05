@@ -6,6 +6,7 @@ class Footer extends React.Component {
     return (
       <div className="foot">
         <h1 className="footer-text">My Footer</h1>
+        <h3>{this.props.pesan}</h3>
       </div>
     );
   }

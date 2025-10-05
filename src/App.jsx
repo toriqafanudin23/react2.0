@@ -6,10 +6,10 @@ function App() {
   return (
     <>
       <Header />
-      <TodoCard />
-      <TodoCard />
-      <TodoCard />
-      <Footer />
+      <TodoCard day="Senin" count={3} />
+      <TodoCard day="Selasa" count={2} />
+      <TodoCard day="Rabu" count={1} />
+      <Footer pesan="Toriq Afanudin 2025" />
     </>
   );
 }

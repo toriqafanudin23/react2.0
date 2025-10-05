@@ -1,3 +1,5 @@
+import Heading from "./Heading";
+
 const Header = () => {
   return (
     <div
@@ -8,7 +10,7 @@ const Header = () => {
         textAlign: "center",
       }}
     >
-      <h1>My Header</h1>
+      <Heading>Heading Custom Aku</Heading>
     </div>
   );
 };

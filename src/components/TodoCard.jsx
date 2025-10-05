@@ -1,7 +1,9 @@
-const TodoCard = () => {
+const TodoCard = ({ day, count }) => {
   return (
     <>
-      <h2>Monday</h2>
+      <h2>
+        {day} ({count})
+      </h2>
       <ul>
         <li>Mandi</li>
         <li>Sarapan</li>
