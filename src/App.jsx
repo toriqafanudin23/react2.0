@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import TodoCard from "./components/TodoCard";
 import "./App.css";
 import Counter from "./components/Counter";
+import Wishlist from "./components/Wishlist";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       {/* <TodoCard day="Senin" count={3} />
       <TodoCard day="Selasa" count={2} />
       <TodoCard day="Rabu" count={1} /> */}
+      <Wishlist />
       <Footer pesan="Toriq Afanudin 2025" />
     </>
   );
