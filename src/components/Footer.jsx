@@ -1,11 +1,12 @@
 import React from "react";
+import "../styles/Footer.css";
 
 class Footer extends React.Component {
   render() {
     return (
-      <>
-        <h1>My Footer</h1>
-      </>
+      <div className="foot">
+        <h1 className="footer-text">My Footer</h1>
+      </div>
     );
   }
 }
