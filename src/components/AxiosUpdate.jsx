@@ -12,7 +12,7 @@ const UpdateData = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:2000/products/");
+      const response = await axios.get("https://api.avanudin.cloud/products");
       setData(response.data.data); // sesuaikan dengan struktur respons backend
     } catch (err) {
       setError(err.message);
@@ -31,7 +31,7 @@ const UpdateData = () => {
 
   const handleEditData = async (item) => {
     try {
-      await axios.put(`http://localhost:2000/products/${item.id}`, {
+      await axios.put(`https://api.avanudin.cloud/products/${item.id}`, {
         name: item.name,
         price: Number(item.price),
         description: item.description,
@@ -51,7 +51,7 @@ const UpdateData = () => {
   const handleAddData = async () => {
     // e.preventDefault();
     try {
-      await axios.post("http://localhost:2000/products", {
+      await axios.post("https://api.avanudin.cloud/products", {
         name: name,
         price: Number(price),
         description: description,
@@ -72,7 +72,7 @@ const UpdateData = () => {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:2000/products/${id}`);
+      await axios.delete(`https://api.avanudin.cloud/products/${id}`);
       alert("Data berhasil dihapus!");
       fetchData();
     } catch (err) {
@@ -139,7 +139,7 @@ const UpdateData = () => {
                 </button>
                 <button
                   onClick={() => handleDeleteData(item.id)}
-                  className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+                  className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition ml-2"
                 >
                   Hapus
                 </button>

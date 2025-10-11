@@ -7,20 +7,24 @@ import Wishlist from "./components/Wishlist";
 import DataFetcher from "./components/AxiosGet";
 import PostData from "./components/AxiosPost";
 import UpdateData from "./components/AxiosUpdate";
+import LoginForm from "./components/Login";
 
 function App() {
   return (
     <>
-      <Header />
-      {/* <Counter />
-      <TodoCard day="Senin" count={3} />
-      <TodoCard day="Selasa" count={2} />
-      <TodoCard day="Rabu" count={1} />
-      <Wishlist /> */}
-      {/* <DataFetcher />
-      <PostData /> */}
-      <UpdateData />
-      <Footer pesan="Toriq Afanudin 2025" />
+      <div className="border">
+        <Header />
+        {/* <Counter />
+        <TodoCard day="Senin" count={3} />
+        <TodoCard day="Selasa" count={2} />
+        <TodoCard day="Rabu" count={1} />
+        <Wishlist />
+        <DataFetcher />
+        <PostData /> */}
+        <LoginForm />
+        <UpdateData />
+        <Footer pesan="Toriq Afanudin 2025" />
+      </div>
     </>
   );
 }
